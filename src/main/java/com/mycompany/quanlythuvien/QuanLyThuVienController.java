@@ -255,6 +255,8 @@ public class QuanLyThuVienController implements Initializable {
                 || txtNgay.getText().equals("") || txtThang.getText().equals("")
                 || txtNam.getText().equals("") || txtDiaChi.getText().equals("")) {
             Utils.getBox("Bắt buộc nhập nơi chứa dấu *", Alert.AlertType.ERROR).show();
+        }else if(txtTenDG.getText().length() > 50){
+            Utils.getBox("Tên quá dài", Alert.AlertType.ERROR).show();
         } else if (kiemTra(txtTenDG.getText()) || kiemTra(txtGioiTinh.getText())) {
             Utils.getBox("Vui lòng kiểm tra lại thông tin", Alert.AlertType.ERROR).show();
         } else if (Integer.parseInt(txtNam.getText()) < 1900 || Integer.parseInt(txtNam.getText()) > nam
@@ -1001,14 +1003,5 @@ public class QuanLyThuVienController implements Initializable {
         txtSLDG.setText(Integer.toString(ds.demDocGia()));
         txtSLSach.setText(Integer.toString(ss.demSLSach()));
         txtSLSachChoMuon.setText(Integer.toString(ps.demSLSachChoMuon()));
-    }
-    
-    public void thoat(ActionEvent evt){
-        Utils.getBox("Bạn có chắc chắn muốn thoát không?", Alert.AlertType.CONFIRMATION)
-                .showAndWait().ifPresent(bt -> {
-            if (bt == ButtonType.OK) {
-                System.exit(0);
-            }
-        });
     }
 }

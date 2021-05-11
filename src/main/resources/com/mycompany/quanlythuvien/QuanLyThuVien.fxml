@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="775.0" prefWidth="1350.0" snapToPixel="false" stylesheets="@css/Login.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.quanlythuvien.QuanLyThuVienController">
+  <tabs>
+    <Tab text="Độc Giả">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tbDocGia" prefHeight="400.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Label layoutX="15.0" layoutY="410.0" prefHeight="45.0" text="Mã ĐG" />
+                  <TextField fx:id="txtMaDG" disable="true" editable="false" layoutX="140.0" layoutY="410.0" prefHeight="45.0" prefWidth="80.0" />
+                  <Label layoutX="14.0" layoutY="470.0" prefHeight="45.0" text="Họ Tên" />
+                  <TextField fx:id="txtTenDG" layoutX="140.0" layoutY="470.0" prefHeight="45.0" prefWidth="300.0" promptText="* (vd: Nguyễn Văn A)" />
+                  <Label layoutX="17.0" layoutY="530.0" prefHeight="45.0" text="Giới Tính" />
+                  <TextField fx:id="txtGioiTinh" layoutX="140.0" layoutY="530.0" prefHeight="45.0" prefWidth="200.0" promptText="* (Nam. Nữ, Khác)" />
+                  <Label layoutX="14.0" layoutY="590.0" prefHeight="45.0" text="Năm Sinh" />
+                  <Label layoutX="20.0" layoutY="650.0" prefHeight="45.0" text="Địa Chỉ" />
+                  <TextField fx:id="txtDiaChi" layoutX="140.0" layoutY="650.0" prefHeight="45.0" prefWidth="300.0" promptText="*" />
+                  <Button fx:id="btThemDocGia" layoutX="850.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnThemDG" prefHeight="50.0" prefWidth="80.0" text="Thêm" />
+                  <Button fx:id="btXoaDG" layoutX="1050.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnXoaDG" prefHeight="50.0" prefWidth="80.0" text="Xóa" />
+                  <TextField fx:id="txtTimKiemDG" layoutX="750.0" layoutY="410.0" prefHeight="45.0" prefWidth="300.0" promptText="Nhập tên cần tìm" />
+                  <Button layoutX="750.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnResetDG" prefHeight="50.0" prefWidth="80.0" text="Reset" />
+                  <Button fx:id="btSuaDG" layoutX="950.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnSuaDG" prefHeight="50.0" prefWidth="80.0" text="Sửa" />
+                  <TextField fx:id="txtNgay" layoutX="140.0" layoutY="590.0" prefHeight="45.0" prefWidth="50.0" />
+                  <TextField fx:id="txtThang" layoutX="210.0" layoutY="590.0" prefHeight="45.0" prefWidth="50.0" />
+                  <TextField fx:id="txtNam" layoutX="280.0" layoutY="590.0" prefHeight="45.0" prefWidth="110.0" />
+                  <Label layoutX="265.0" layoutY="590.0" prefHeight="45.0" text="/" />
+                  <Label layoutX="195.0" layoutY="590.0" prefHeight="45.0" text="/" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Sách">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tbSach" prefHeight="400.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Label layoutX="15.0" layoutY="410.0" prefHeight="45.0" text="Mã Sách" />
+                  <TextField fx:id="txtMaSach" disable="true" editable="false" layoutX="140.0" layoutY="410.0" prefHeight="45.0" prefWidth="80.0" />
+                  <Label layoutX="15.0" layoutY="470.0" prefHeight="45.0" text="Tên Sách" />
+                  <TextField fx:id="txtTenSach" layoutX="140.0" layoutY="470.0" prefHeight="45.0" />
+                  <Label layoutX="15.0" layoutY="530.0" prefHeight="45.0" text="Tác Giả" />
+                  <TextField fx:id="txtTacGia" layoutX="140.0" layoutY="530.0" prefHeight="45.0" />
+                  <Label layoutX="15.0" layoutY="590.0" prefHeight="45.0" text="Thể Loại" />
+                  <TextField fx:id="txtTheLoai" layoutX="140.0" layoutY="590.0" prefHeight="45.0" />
+                  <Label layoutX="15.0" layoutY="650.0" prefHeight="45.0" text="NXB" />
+                  <TextField fx:id="txtNXB" layoutX="140.0" layoutY="650.0" prefHeight="45.0" />
+                  <Button fx:id="btThemSach" layoutX="850.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnThemSach" prefHeight="50.0" prefWidth="80.0" text="Thêm" />
+                  <Button fx:id="btXoaSach" layoutX="1050.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnXoaSach" prefHeight="50.0" prefWidth="80.0" text="Xóa" />
+                  <Label layoutX="650.0" layoutY="470.0" prefHeight="45.0" text="Giá" />
+                  <TextField fx:id="txtGia" layoutX="775.0" layoutY="470.0" prefHeight="45.0" prefWidth="150.0" />
+                  <Label layoutX="650.0" layoutY="530.0" prefHeight="45.0" text="SL" />
+                  <TextField fx:id="txtSL" layoutX="775.0" layoutY="530.0" prefHeight="45.0" prefWidth="80.0" />
+                  <Label layoutX="650.0" layoutY="590.0" prefHeight="45.0" text="Tình Trạng" />
+                  <TextField fx:id="txtTinhTrangSach" disable="true" layoutX="775.0" layoutY="590.0" prefHeight="45.0" prefWidth="150.0" />
+                  <TextField fx:id="txtTimKiemSach" layoutX="750.0" layoutY="410.0" prefHeight="45.0" promptText="Nhập tên cần tim" />
+                  <Button layoutX="750.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnResetSach" prefHeight="50.0" prefWidth="80.0" text="Reset" />
+                  <Button fx:id="btSuaSach" layoutX="950.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnSuaSach" prefHeight="50.0" prefWidth="80.0" text="Sửa" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Mượn Sách">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tbPhieu" prefHeight="400.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Label layoutX="15.0" layoutY="470.0" prefHeight="45.0" text="Mã ĐG" />
+                  <Label layoutX="15.0" layoutY="530.0" prefHeight="45.0" text="Mã Sách" />
+                  <Label layoutX="15.0" layoutY="590.0" prefHeight="45.0" text="SL" />
+                  <Label layoutX="900.0" layoutY="470.0" prefHeight="45.0" text="Ngày Mượn" />
+                  <Button fx:id="btThemPhieu" layoutX="950.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnThemPhieuMuon" prefHeight="50.0" prefWidth="80.0" text="Thêm" />
+                  <Button fx:id="btXoaPhieu" layoutX="1150.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnXoaPhieu" prefHeight="50.0" prefWidth="80.0" text="Xóa" />
+                  <Label layoutX="430.0" layoutY="470.0" prefHeight="45.0" text="Tên ĐG" />
+                  <TextField fx:id="txtTenDGMuon" disable="true" editable="false" layoutX="550.0" layoutY="470.0" prefHeight="45.0" />
+                  <Label layoutX="430.0" layoutY="530.0" prefHeight="45.0" text="Tên Sách" />
+                  <TextField fx:id="txtTenSachMuon" disable="true" editable="false" layoutX="550.0" layoutY="530.0" prefHeight="45.0" />
+                  <TextField fx:id="txtNgayMuon" disable="true" editable="false" layoutX="1050.0" layoutY="470.0" prefHeight="45.0" />
+                  <TextField fx:id="txtMaDGMuon" layoutX="140.0" layoutY="470.0" prefHeight="45.0" prefWidth="80.0" />
+                  <TextField fx:id="txtMaSachMuon" layoutX="140.0" layoutY="530.0" prefHeight="45.0" prefWidth="80.0" />
+                  <TextField fx:id="txtSLSachMuon" layoutX="140.0" layoutY="590.0" prefHeight="45.0" prefWidth="50.0" />
+                  <TextField fx:id="txtTimKiemPhieu" layoutX="750.0" layoutY="410.0" prefHeight="45.0" promptText="Nhập mã phiếu cần tìm" />
+                  <Label layoutX="15.0" layoutY="410.0" prefHeight="45.0" text="Mã Phiếu" />
+                  <TextField fx:id="txtMaPhieu" disable="true" editable="false" layoutX="140.0" layoutY="410.0" prefHeight="45.0" prefWidth="80.0" />
+                  <Button layoutX="250.0" layoutY="470.0" mnemonicParsing="false" onAction="#btnKTMaDG" prefHeight="45.0" text="Kiểm Tra" />
+                  <Button layoutX="250.0" layoutY="530.0" mnemonicParsing="false" onAction="#btnKTMaSach" prefHeight="45.0" text="Kiểm Tra" />
+                  <Button layoutX="750.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnResetMuonSach" prefHeight="50.0" prefWidth="80.0" text="Reset" />
+                  <Button fx:id="btTra" layoutX="850.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnTra" prefHeight="50.0" prefWidth="80.0" text="Trả" />
+                  <Label layoutX="430.0" layoutY="590.0" prefHeight="45.0" text="Tình Trạng" />
+                  <TextField fx:id="txtTinhTrangPhieu" disable="true" editable="false" layoutX="550.0" layoutY="590.0" prefHeight="45.0" />
+                  <Button fx:id="btSuaPhieu" layoutX="1050.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnSuaPhieu" prefHeight="50.0" prefWidth="80.0" text="Sửa" />
+                  <Label layoutX="900.0" layoutY="530.0" prefHeight="45.0" text="Hạn Trả" />
+                  <Label layoutX="900.0" layoutY="590.0" prefHeight="45.0" text="Ngày Trả" />
+                  <TextField fx:id="txtHanTra" disable="true" editable="false" layoutX="1050.0" layoutY="530.0" prefHeight="45.0" />
+                  <TextField fx:id="txtNgayTra" disable="true" editable="false" layoutX="1050.0" layoutY="590.0" prefHeight="45.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Thống kê">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="100.0" prefHeight="45.0" text="Sách" />
+                  <Label layoutX="80.0" layoutY="150.0" prefHeight="45.0" text="Tổng số" />
+                  <Label layoutX="500.0" layoutY="150.0" prefHeight="45.0" text="Đang cho mượn" />
+                  <Label layoutX="14.0" layoutY="50.0" prefHeight="45.0" text="Độc giả" />
+                  <TextField fx:id="txtSLDG" layoutX="180.0" layoutY="50.0" prefHeight="45.0" />
+                  <TextField fx:id="txtSLSachChoMuon" layoutX="700.0" layoutY="150.0" prefHeight="45.0" />
+                  <TextField fx:id="txtSLSach" layoutX="180.0" layoutY="150.0" prefHeight="45.0" />
+                  <Button layoutX="500.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnThongKe" prefHeight="50.0" prefWidth="130.0" text="Làm mới" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.quanlithuvien.test.ReaderTester
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.048 s - in com.mycompany.quanlithuvien.test.ReaderTester

@@ -27,7 +27,7 @@
                   <Button fx:id="btThemDocGia" layoutX="850.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnThemDG" prefHeight="50.0" prefWidth="80.0" text="Thêm" />
                   <Button fx:id="btXoaDG" layoutX="1050.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnXoaDG" prefHeight="50.0" prefWidth="80.0" text="Xóa" />
                   <TextField fx:id="txtTimKiemDG" layoutX="750.0" layoutY="410.0" prefHeight="45.0" prefWidth="300.0" promptText="Nhập tên cần tìm" />
-                  <Button layoutX="750.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnResetDG" prefHeight="50.0" prefWidth="80.0" text="Reset" />
+                  <Button layoutX="700.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnResetDG" prefHeight="50.0" prefWidth="130.0" text="Làm Mới" />
                   <Button fx:id="btSuaDG" layoutX="950.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnSuaDG" prefHeight="50.0" prefWidth="80.0" text="Sửa" />
                   <TextField fx:id="txtNgay" layoutX="140.0" layoutY="590.0" prefHeight="45.0" prefWidth="50.0" />
                   <TextField fx:id="txtThang" layoutX="210.0" layoutY="590.0" prefHeight="45.0" prefWidth="50.0" />
@@ -60,8 +60,8 @@
                   <TextField fx:id="txtSL" layoutX="775.0" layoutY="530.0" prefHeight="45.0" prefWidth="80.0" />
                   <Label layoutX="650.0" layoutY="590.0" prefHeight="45.0" text="Tình Trạng" />
                   <TextField fx:id="txtTinhTrangSach" disable="true" layoutX="775.0" layoutY="590.0" prefHeight="45.0" prefWidth="150.0" />
-                  <TextField fx:id="txtTimKiemSach" layoutX="750.0" layoutY="410.0" prefHeight="45.0" promptText="Nhập tên cần tim" />
-                  <Button layoutX="750.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnResetSach" prefHeight="50.0" prefWidth="80.0" text="Reset" />
+                  <TextField fx:id="txtTimKiemSach" layoutX="750.0" layoutY="410.0" prefHeight="45.0" promptText="Nhập tên cần tìm" />
+                  <Button layoutX="700.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnResetSach" prefHeight="50.0" prefWidth="130.0" text="Làm Mới" />
                   <Button fx:id="btSuaSach" layoutX="950.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnSuaSach" prefHeight="50.0" prefWidth="80.0" text="Sửa" />
                </children>
             </AnchorPane>
@@ -91,7 +91,7 @@
                   <TextField fx:id="txtMaPhieu" disable="true" editable="false" layoutX="140.0" layoutY="410.0" prefHeight="45.0" prefWidth="80.0" />
                   <Button layoutX="250.0" layoutY="470.0" mnemonicParsing="false" onAction="#btnKTMaDG" prefHeight="45.0" text="Kiểm Tra" />
                   <Button layoutX="250.0" layoutY="530.0" mnemonicParsing="false" onAction="#btnKTMaSach" prefHeight="45.0" text="Kiểm Tra" />
-                  <Button layoutX="750.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnResetMuonSach" prefHeight="50.0" prefWidth="80.0" text="Reset" />
+                  <Button layoutX="700.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnResetMuonSach" prefHeight="50.0" prefWidth="130.0" text="Làm Mới" />
                   <Button fx:id="btTra" layoutX="850.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnTra" prefHeight="50.0" prefWidth="80.0" text="Trả" />
                   <Label layoutX="430.0" layoutY="590.0" prefHeight="45.0" text="Tình Trạng" />
                   <TextField fx:id="txtTinhTrangPhieu" disable="true" editable="false" layoutX="550.0" layoutY="590.0" prefHeight="45.0" />
@@ -115,7 +115,7 @@
                   <TextField fx:id="txtSLDG" layoutX="180.0" layoutY="50.0" prefHeight="45.0" />
                   <TextField fx:id="txtSLSachChoMuon" layoutX="700.0" layoutY="150.0" prefHeight="45.0" />
                   <TextField fx:id="txtSLSach" layoutX="180.0" layoutY="150.0" prefHeight="45.0" />
-                  <Button layoutX="500.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnThongKe" prefHeight="50.0" prefWidth="130.0" text="Làm mới" />
+                  <Button layoutX="500.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnThongKe" prefHeight="50.0" prefWidth="130.0" text="Làm Mới" />
                </children></AnchorPane>
       </content>
     </Tab>

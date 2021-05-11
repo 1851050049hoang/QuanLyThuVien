@@ -161,4 +161,17 @@ public class ReaderTester {
             Logger.getLogger(BookTester.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    
+    @Test
+    public void testDelete() {
+        try {
+            DocGiaService ds = new DocGiaService(CONN);
+            ds.xoaDocGia(15);
+            
+            System.out.print("Xóa thành công");
+        } catch (SQLException ex) {
+            System.out.print("Xóa thất bại");
+            Logger.getLogger(ReaderTester.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 }

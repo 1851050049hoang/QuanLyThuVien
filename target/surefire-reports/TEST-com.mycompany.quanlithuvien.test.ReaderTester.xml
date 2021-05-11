@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.quanlithuvien.test.ReaderTester" time="1.048" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.quanlithuvien.test.ReaderTester" time="18.589" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
-    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter C:\Users\Dell\AppData\Local\Temp\surefire12034905304003005639 2021-05-10T22-19-56_731-jvmRun1 surefire15292672133872096404tmp surefire_05970290477165624969tmp"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter C:\Users\Dell\AppData\Local\Temp\surefire9052885771910326496 2021-05-11T09-48-33_795-jvmRun1 surefire39230111872352234tmp surefire_05864225627081074753tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="com.mycompany.quanlithuvien.test.ReaderTester"/>
     <property name="surefire.test.class.path" value="D:\HCMCOU\2020-2021\202\KTPM\QuanLyThuVien\target\test-classes;C:\Users\Dell\.m2\repository\org\openjfx\javafx-controls\13\javafx-controls-13.jar;C:\Users\Dell\.m2\repository\org\openjfx\javafx-graphics\13\javafx-graphics-13.jar;C:\Users\Dell\.m2\repository\org\openjfx\javafx-base\13\javafx-base-13.jar;C:\Users\Dell\.m2\repository\org\openjfx\javafx-fxml\13\javafx-fxml-13.jar;C:\Users\Dell\.m2\repository\mysql\mysql-connector-java\8.0.23\mysql-connector-java-8.0.23.jar;C:\Users\Dell\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;C:\Users\Dell\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.0-M1\junit-jupiter-engine-5.8.0-M1.jar;C:\Users\Dell\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\Dell\.m2\repository\org\junit\platform\junit-platform-engine\1.8.0-M1\junit-platform-engine-1.8.0-M1.jar;C:\Users\Dell\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Dell\.m2\repository\org\junit\platform\junit-platform-commons\1.8.0-M1\junit-platform-commons-1.8.0-M1.jar;C:\Users\Dell\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.0-M1\junit-jupiter-api-5.8.0-M1.jar;C:\Users\Dell\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.4.20\kotlin-stdlib-jdk8-1.4.20.jar;C:\Users\Dell\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.4.20\kotlin-stdlib-1.4.20.jar;C:\Users\Dell\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.4.20\kotlin-stdlib-common-1.4.20.jar;C:\Users\Dell\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Dell\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.4.20\kotlin-stdlib-jdk7-1.4.20.jar;C:\Users\Dell\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.0-M1\junit-jupiter-params-5.8.0-M1.jar;"/>
@@ -58,13 +58,15 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="testException" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="0.011"/>
-  <testcase name="testAddReaderNameNull" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="0.562"/>
-  <testcase name="testAddReaderGioiTinhNull" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="0.022"/>
+  <testcase name="testException" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="0.145"/>
+  <testcase name="testTimeout" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="0.394"/>
+  <testcase name="testAddReaderNameNull" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="1.874"/>
+  <testcase name="testAddReaderGioiTinhNull" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="0.02"/>
   <testcase name="testWithKeyWord" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="0"/>
-  <testcase name="testAddReader" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="0"/>
-  <testcase name="testAddReaderAddressNull" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="0.016"/>
-  <testcase name="testAddBatchProduct{String, String, int, String}[1]" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="0"/>
-  <testcase name="testAddBatchProduct{String, String, int, String}[2]" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="0"/>
-  <testcase name="testUnknownWithKeyWord" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="0"/>
+  <testcase name="testAddReader" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="1.131"/>
+  <testcase name="testAddReaderAddressNull" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="0.524"/>
+  <testcase name="testDelete" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="0.379"/>
+  <testcase name="testAddBatchProduct{String, String, int, String}[1]" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="0.848"/>
+  <testcase name="testAddBatchProduct{String, String, int, String}[2]" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="0.168"/>
+  <testcase name="testUnknownWithKeyWord" classname="com.mycompany.quanlithuvien.test.ReaderTester" time="0.004"/>
 </testsuite>
